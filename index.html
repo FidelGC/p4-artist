@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mikhail Batkhin</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --c:orange;
+            --altura:70vh;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 70vh;
+            background: orange;
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header div {
+            width: 50%;
+            height: 70vh;
+            position: relative;
+        }
+        header h1{
+            color: aliceblue;
+        }
+
+        div {
+            position: relative;
+            width: 50%;
+            height: 70vh;
+        }
+
+
+        .bloq_esq {
+            background: purple;
+        }
+
+        .bloq_esq img {
+            object-fit: cover;
+            object-position: top center;
+
+        }
+
+        .bloq_dre {
+            background: pink;
+        }
+
+        .bloq_dre img {
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        h1 {
+            position: absolute;
+            top: 40vh;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 70vh;
+            width: 100%;
+            text-align: center;
+            font-size: 3vw;
+            font-family: 'Oswald';
+        }
+
+        article {
+            width: 35.4em;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        article>p:first-child {
+            padding: 8vw 0;
+            hyphens: auto;
+            color: var(--c);
+            column-count: 2;
+            column-gap: 2em;
+            text-align: justify;
+            hyphens: auto;
+            column-rule: 1px solid orange;
+            line-height: 1.4em;
+            font-size: 13px;
+
+        }
+        article #cos>p:first-child::first-letter {
+            font-size: 5em;
+            float: left;
+            margin-right: 0.2em;
+            margin-top: -0.15em;
+            margin-bottom: 0;
+            color: orange;
+            
+            
+        }
+        
+
+        article #cos {
+            background: purple;
+            width: 100%;
+            text-align: justify;
+            padding: 0 3em;
+            hyphens: auto;
+        }
+
+        article #cos p {
+            padding: 0 0 1.5em 0;
+        }
+
+        .cercle,
+        .hexagon {
+            background: pink;
+        }
+
+        .cercle img,
+        .hexagon img {
+            mix-blend-mode: hard-light;
+        }
+
+        .cercle,
+        .cercle img {
+            border-radius: 50%;
+            float: left;
+        }
+
+        .cercle {
+            max-width: 20em;
+            margin-left: -8em;
+            float: left;
+            shape-margin: 1em;
+            shape-outside: circle(50%) border-box;
+        }
+        .hexagon,
+        .hexagon img{
+            clip-path: polygon(47% 0, 100% 25%, 86% 72%, 19% 100%, 0 84%, 0 46%)
+        }
+
+        .hexagon{
+            max-width: 20em;
+            float: right;
+            shape-margin: 1em;
+            margin-right: -8em;
+            shape-outside: polygon(47% 0, 100% 25%, 86% 72%, 19% 100%, 0 84%, 0 46%) border-box;
+            
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: azure;
+                font-size: 10px;
+            }
+        }
+        body{
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bloq_esq">
+            <img src="img/41zeXBbPs4L._SX331_BO1,204,203,200_.jpg">
+        </div>
+        <div class="bloq_dre">
+            <img src="img/bakhtin.jpg">
+        </div>
+        <h1>Mikhail Batkhin</h1>
+    </header>
+    <article>
+        <p>
+            Mikhail Bakhtin, teórico literario ruso y filósofo del lenguaje cuyas ideas de gran alcance influyeron significativamente en el pensamiento occidental en historia cultural, lingüística, teoría literaria y estética.
+        </p>
+        <div id="cos">
+            <p>
+                Abierto a las corrientes filosóficas y científicas de su tiempo, siguió de cerca, entre otros muchos, los postulados teóricos de Albert Einstein, trasladando ciertos conceptos acerca de la relatividad al estudio del diálogo y a los procesos de comunicación. Bajtin analiza el diálogo y la retórica, creando un nuevo marco teórico en el que aparecen los valores de interacción de los dialogantes como actores capaces de enriquecer o modelar la retórica. Plantea un retórica dialógica y, al tiempo, dialéctica, determinada por la posición cultural, psicológica, etc. de los actores que se comunican. Frente al carácter discursivo unidireccional, impositivo y dominador de la retórica clásica, alumbra una construcción participativa, integradora, social, en la que cabe la diversidad, la multiplicidad de voces, el escenario ‘polifónico’, en la que muchos autores ven rasgos que anticipan las futuras derivas de los estudios culturales.
+            </p>
+            <p>
+                Bajtin establece una similitud entre el acto y la palabra, y el acto es el hecho concreto de la comunicación. Frente a la lingüística tradicional, propone el estudio de la lengua como un fenómeno de comunicación, siempre relacionada con un contexto, con unos valores de interlocución definidos por los protagonistas del diálogo. También distingue el alcance de la comunicación en función de los ‘géneros’ expresivos, del ‘volumen’ semántico, de la naturaleza dialogante de sus actores, de la situación en la que se produce, se sus alcances extralingüísticos y metalingüísticos. Así, quienes producen un texto escrito no lo hacen fuera del circuito lógico de la comunicación, de su intención de diálogo con un público concreto en un ambiente concreto. Por eso, la interpretación de los textos clásicos no se pueden hacer desde la abstracción temporal, social y cultural del momento en el que el autor empleó los recursos del diálogo con sus lectores, esto es, precisa conocer lo que describe como su ‘cronotopo’. Las expresiones de los medios de comunicación, sus valores narrativos y de agenda, pueden ser analizados de esta doble vertiente espacio-temporal que los envuelve como parte sustantiva de su sentido comunicativo.
+
+            </p>
+            <div class="cercle">
+                <img src="" alt="">
+            </div>
+            <p>
+                Bajtin habla también de la ‘hibridación’ dialógica, como instrumento de permeabilidad y libertad de los idiomas para favorecer la pragmática comunicativa entre expresiones de épocas distintas o entre valores culturales coetáneos, diferenciados por matices contextuales heterogéneos o distintas matrices idiomáticas, esto es, por su ‘heteroglosia’.
+            </p>
+            <div class="hexagon">
+                <img src="" alt="">
+            </div>
+            <p>
+                Nació en Orel, al sur de Moscú, en 1895, pero vivió su infancia en Vilnius (Lituania) y Odessa. Estudió filosofía y letras en la Universidad de San Petersburgo. Junto a otros intelectuales creó el llamado 'círculo Bajtin', estudioso del pensamiento contemporáneo y de las nuevas corrientes de la ciencia. Permaneció en el nuevo Leningrado, nombre de San Petersburgo después de la revolución de 1917, apoyado por su mujer, ya que había perdido su trabajo como consecuencia de las sospechas suscitadas por sus prácticas religiosas. Detenido en 1929, fue deportado a Kazakhstan, donde permaneció siete años, antes de iniciar su actividad como docente en Saransk (Mordovia), de donde emigró hacia Kimry, huyendo la gran purga stalinista de 1937. Víctima de una enfermedad ósea, en 1938 le fue amputada una pierna. En 1941 leyó sus tesis sobre Rabelais en el Instituto Gorky de Moscú. Después de la Segunda Guerra Mundial regresó a Saransk, de cuya Universidad fue catedrático hasta su jubilación en 1961. Sus obras alcanzaron gran prestigio en los círculos académicos moscovitas de los años 60, pero su figura, que fue conocida en occidente después de su muerte (1975), no tuvo el gran reconocimiento de su país hasta los años 90 de pasado siglo. Su obra y la de quienes formaron el círculo intelectual y académico del autor está en el origen de la nueva lingüística, la sociolingüística, la narratología, la antropología literaria e, incluso, de los estudios culturales y las construcciones hipertextuales.
+            </p>
+
+
+        </div>
+
+
+    </article>
+</body>
+
+</html>
